@@ -1,6 +1,12 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 409:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
 /***/ 888:
 /***/ ((module) => {
 
@@ -29,7 +35,7 @@ module.exports = eval("require")("xpath");
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("fs");
+module.exports = __nccwpck_require__(147);
 
 /***/ })
 
@@ -39,7 +45,7 @@ module.exports = require("fs");
 /******/ 	var __webpack_module_cache__ = {};
 /******/ 	
 /******/ 	// The require function
-/******/ 	function __nccwpck_require__(moduleId) {
+/******/ 	function __nccwpck_require2_(moduleId) {
 /******/ 		// Check if module is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
@@ -55,7 +61,7 @@ module.exports = require("fs");
 /******/ 		// Execute the module function
 /******/ 		var threw = true;
 /******/ 		try {
-/******/ 			__webpack_modules__[moduleId](module, module.exports, __nccwpck_require__);
+/******/ 			__webpack_modules__[moduleId](module, module.exports, __nccwpck_require2_);
 /******/ 			threw = false;
 /******/ 		} finally {
 /******/ 			if(threw) delete __webpack_module_cache__[moduleId];
@@ -68,17 +74,17 @@ module.exports = require("fs");
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat */
 /******/ 	
-/******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";
+/******/ 	if (typeof __nccwpck_require2_ !== 'undefined') __nccwpck_require2_.ab = __dirname + "/";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 
-const fs = __nccwpck_require__(147);
-const core = __nccwpck_require__(888);
-const xpath = __nccwpck_require__(237)
-const { DOMParser, XMLSerializer } = __nccwpck_require__(261)
+const fs = __nccwpck_require2_(147);
+const core = __nccwpck_require2_(888);
+const xpath = __nccwpck_require2_(237)
+const { DOMParser, XMLSerializer } = __nccwpck_require2_(261)
 
 const file = core.getInput('file');
 const regex = core.getInput('regex');
@@ -203,5 +209,63 @@ run()
 })();
 
 module.exports = __webpack_exports__;
+/******/ })()
+;
+
+/***/ }),
+
+/***/ 147:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __nccwpck_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		var threw = true;
+/******/ 		try {
+/******/ 			__webpack_modules__[moduleId](module, module.exports, __nccwpck_require__);
+/******/ 			threw = false;
+/******/ 		} finally {
+/******/ 			if(threw) delete __webpack_module_cache__[moduleId];
+/******/ 		}
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat */
+/******/ 	
+/******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	var __webpack_exports__ = __nccwpck_require__(409);
+/******/ 	module.exports = __webpack_exports__;
+/******/ 	
 /******/ })()
 ;
