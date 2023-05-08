@@ -42,11 +42,11 @@ async function run()
             const ver = parse_version(verElement2.data);
             if (ver)
             {
-                //core.setOutput('version', verElement2.data);
+                core.setOutput('version', verElement2.data);
             }
             else
             {
-                core.setFailed("failed to parse .csproj version at read back");
+                core.setFailed("failed to parse .csproj version at read back..");
             }
 
             if (verElement2.data === verElement.data)
