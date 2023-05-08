@@ -2,7 +2,7 @@ name: Set CSProj Version Fork
 description: Sets the current version to a given .csproj
 branding:
   icon: anchor
-  color: blue
+  color: yellow
 inputs:
   file:
     description: |
