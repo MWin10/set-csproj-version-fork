@@ -42,7 +42,7 @@ async function run()
             const ver = parse_version(verElement2.data);
             if (ver)
             {
-                core.setOutput('version', verElement2.data);
+                //core.setOutput('version', verElement2.data);
             }
             else
             {
