@@ -1,4 +1,4 @@
-name: Set CSProj Version
+name: Set CSProj Version Fork
 description: Sets the current version to a given .csproj
 branding:
   icon: anchor
