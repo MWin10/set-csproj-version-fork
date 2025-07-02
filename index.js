@@ -42,7 +42,13 @@ async function run()
             const ver = parse_version(verElement2.data);
             if (ver)
             {
-                core.setOutput('version', verElement2.data);
+                // Use Environment Files instead of setOutput (deprecated)
+                const outputFile = process.env.GITHUB_OUTPUT;
+                if (outputFile) {
+                    fs.appendFileSync(outputFile, `version=${verElement2.data}\n`);
+                } else {
+                    core.warning('GITHUB_OUTPUT environment variable is not set.');
+                }
             }
             else
             {
